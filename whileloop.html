@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>While Loops</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a href="index.html">Home</a>
+  <hr>
+  <p><strong>While Loop:</strong> A while loop in C programming repeatedly executes a target statement as long as a given condition is true.</p><br>
+  <img src="images/whileloop.PNG" alt=""><br>
+  <p>Here is the flow of control in a 'while' loop −</p>
+  <ul>
+    <li>The while loop evaluates the test expression inside the parenthesis ().</li><br>
+    <li>If the test expression is true, statements inside the body of while loop are executed. Then, the test expression is evaluated again.</li><br>
+    <li>After the body of the 'for' loop executes, the flow of control jumps back up to the increment statement.</li><br>
+    <li>The process goes on until the test expression is evaluated to false.</li><br>
+    <li>If the test expression is false, the loop terminates (ends).</li>
+  </ul>
+  <p>The key point to note is that a while loop might not execute at all. When the condition is tested and the result is false, the loop body will be skipped and the first statement after the while loop will be executed.<br>
+    <strong>while loop -</strong> used for looping until a condition is satisfied and when it is unsure how many times the code should be in loop.</p><br>
+  <p><strong>Examples:</strong></p>
+  <p><strong>1.</strong> <br>
+    #include < stdio.h> <br>
+
+      int main () { <br>
+
+      /* local variable definition */ <br>
+      int a = 10; <br>
+
+      /* while loop execution */ <br>
+      while( a < 20 ) { <br>
+        printf("value of a: %d\n", a); <br>
+        a++; <br>
+        } <br>
+
+        return 0; <br>
+        } <br>
+        This will print number from 10 to 19.
+        <br>
+        <br>
+        <strong>2.</strong> <br>
+        #include < stdio.h><br>
+
+          int main () { <br>
+
+          /* local variable definition */ <br>
+          int a = 10; <br>
+
+          /* while loop execution */ <br>
+          while( a <= 20 ) { <br>
+            printf("value of a: %d\n", a); <br>
+            a++; <br>
+            } <br>
+
+            return 0; <br>
+            } <br>
+
+            This will print the number from 10 to 20.
+            <br>
+            <br>
+            <strong>Use of continue and break in loop statements.</strong> <br> <br>
+
+The break directive halts a loop, even though the loop never finishes. <br>
+#include < stdio.h ><br>
+
+int main () { <br>
+
+    int n = 0; <br>
+while (1) { <br>
+    n++; <br>
+    if (n == 10) { <br>
+        break; <br>
+    } <br>
+} <br>
+   return 0; <br>
+} <br>
+<br>
+The continue directive causes the command to be skipped. <br>
+
+#include < stdio.h > <br>
+
+int main () { <br>
+
+    int n = 0; <br>
+	while (n < 10) { <br>
+    n++; <br>
+
+    /* check that n is odd */ <br>
+    if (n % 2 == 1) { <br>
+        /* go back to the start of the while block */ <br>
+        continue; <br>
+    } <br>
+
+    /* we reach this code only if n is even */ <br>
+    printf("The number %d is even.\n", n); <br>
+	} <br>
+   return 0; <br>
+} <br>
+
+  </p>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Function</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a href="index.html">Home</a>
+  <hr>
+  <h2>C Functions</h2>
+  <p>Function is used to divide large program in smaller blocks.</p>
+  <hr>
+  <p>There are the following advantages of C functions.<br>
+    <ul>
+      <li>By using functions, we can avoid rewriting same logic/code again and again in a program.</li><br>
+      <li>We can call C functions any number of times in a program and from any place in a program.</li><br>
+      <li>We can track a large C program easily when it is divided into multiple functions.</li><br>
+      <li>Reusability is the main achievement of C functions.</li><br>
+      <li>However, Function calling is always a overhead in a C program.</li>
+    </ul> <br>
+    There are three aspects of a C function.<br>
+    <ul>
+      <li><strong>Function declaration</strong> A function must be declared globally in a c program to tell the compiler about the function name, function parameters, and return type.</li> <br>
+      <li><strong>Function call</strong> Function can be called from anywhere in the program. The parameter list must not differ in function calling and function declaration.<br>
+        We must pass the same number of functions as it is declared in the function declaration.</li> <br>
+      <li><strong>Function definition</strong> It contains the actual statements which are to be executed. It is the most important aspect to which the control comes when the function is called. <br>
+        Here, we must notice that only one value can be returned from the function.</li> <br>
+    </ul>
+  </p>
+  <p><strong>Examples:</strong></p>
+  <p><strong>1.</strong> <br>
+    #include < stdio.h> <br>
+      // This is main method <br>
+      int main () { <br>
+
+      // Calling a function <br>
+      multiply(2); <br>
+
+      return 0; <br>
+      } <br> <br>
+
+      // Function definition <br>
+      int multiply(int a) { <br>
+      int m = a*2; <br>
+      printf("Answer: %d\n", m ); <br>
+      } <br>
+      This will print "Answer: 4".
+      <br>
+  </p>
+  <h3>Please check your progress:</h3>
+  <form action="mailto:pranavkumster@gmail.com?subject=functioncode" method="post" enctype="text/plain">
+    <label>Please write a program using function to add two numbers.</label><br>
+    <textarea name="Your Code" rows="20" cols="50"></textarea><br>
+    <input type="submit" name="" value="Submit">
+
+  </form>
+</body>
+
+</html>
