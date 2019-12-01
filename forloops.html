@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Loops</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a href="index.html">Home</a>
+  <hr>
+  <p><strong>Loop:</strong> A loop is a sequence of instruction s that is continually repeated until a certain condition is reached.</p>
+  <p><strong>For Loop:</strong> A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.</p><br>
+  <img src="images/Forloop.PNG" alt=""><br>
+  <p>Here is the flow of control in a 'for' loop −</p>
+  <ul>
+    <li>The init step is executed first, and only once. This step allows you to declare and initialize any loop control variables.<br>
+      You are not required to put a statement here, as long as a semicolon appears.</li><br>
+    <li>Next, the condition is evaluated. If it is true, the body of the loop is executed.<br>
+      If it is false, the body of the loop does not execute and the flow of control jumps to the next statement just after the 'for' loop.</li><br>
+    <li>After the body of the 'for' loop executes, the flow of control jumps back up to the increment statement.<br>
+      This statement allows you to update any loop control variables. This statement can be left blank, as long as a semicolon appears after the condition.</li><br>
+    <li>The condition is now evaluated again. If it is true, the loop executes and the process repeats itself (body of a loop, then increment step, and then again condition).<br>
+      After the condition becomes false, the 'for' loop terminates.</li>
+  </ul>
+  <p><strong>Examples:</strong></p>
+  <p><strong>1.</strong> <br>
+    #include < stdio.h> <br>
+      int main () {<br>
+      int a;<br>
+      /* for loop execution */<br>
+      for( a = 10; a < 20; a=a + 1 ){<br>
+        printf("value of a: %d\n", a);<br>
+        }<br>
+        return 0;<br>
+        }<br>
+        In this example value will print from 10 to 19.<br>
+        <br>
+        We can write the above program as below as well <br>
+        #include < stdio.h><br>
+          int main () {<br>
+          int a;<br>
+          /* for loop execution */ <br>
+          for( a = 10; a < 20; a ++ ){ <br>
+            printf("value of a: %d\n", a); <br>
+            } <br>
+            return 0;<br>
+            } <br>
+            <br>
+            <strong>2.</strong> <br>
+            #include < stdio.h> <br>
+              int main () { <br>
+              int a; <br>
+              /* for loop execution */ <br>
+              for( a = 10; a < 20; ++a){ <br>
+                printf("value of a: %d\n", a); <br>
+                } <br>
+                return 0; <br>
+                } <br>
+                This program also prints from 10 to 19. <br>
+                <br>
+                <strong>Let’s use an array in for loop.</strong><br>
+
+                #include < stdio.h> <br>
+                  int main () { <br>
+                  /* Declare array of type int which can have maximum 10 values */ <br>
+                  int array[10] = { 1, 2, 3, 4, 5, 6, 7,8,9,10 }; <br>
+                  int sum = 0; <br>
+                  int i; <br>
+                  for (i = 0; i < 10; i++) { <br>
+                    sum += array[i]; <br>
+                    } <br>
+
+                    /* sum now contains a[0] + a[1] + ... + a[9] */ <br>
+                    printf("Sum of the array is %d\n", sum); <br>
+                    return 0; <br>
+                    } <br>
+                    <strong>Output:</strong> Sum of the array is 55 <br>
+                    The array starts with 0 index, so first value in the array is on position 0. <br>
+                    <br>
+                    A <b>nested loop</b> is a <b>loop</b> within a <b>loop</b>. <br>
+                    Let’s find Prime Number from 2 to 100.<br>
+                    <ul>
+                      <li>The only even prime number is 2.To prove whether a number is a prime number, first try dividing it by 2, and see if you get a whole number.<br>
+                        If you do, it can't be a prime number. If you don't get a whole number, next try dividing it by prime numbers: 3, 5, 7, 11 (9 is divisible by 3) and so on,<br>
+                        always dividing by a prime number.</li>
+                    </ul> <br>
+                    <b>Code:</b>
+                    <br>
+                    #include < stdio.h> <br>
+
+                      int main () { <br>
+
+                      /* local variable definition */ <br>
+                      int i, j; <br>
+                      int mod; <br>
+                      int div; <br>
+                      /* Define first loop that will iterate from 2 to 99 */ <br>
+                      for(i = 2; i < 100; i++) { <br>
+                        /* Second loop to verify prime number*/ <br>
+                        printf("i is %d\n", i); <br>
+                        for(j=2; j <=(i/j); j++) if(!(i%j)) <br>
+                          break; <br>
+                          // if factor found, not prime <br>
+                          mod=i%j; <br>
+                          printf("j is %d\n", j);<br>
+                          printf("i MOD j is %d\n", mod); <br>
+                          div=i/j; <br>
+                          printf("i DIV j is %d\n", div);<br>
+                          if(j> (i/j)) <br>
+                          printf("%d is prime\n", i); <br>
+                          } <br>
+
+                          return 0;<br>
+                          }
+  </p>
+  <p>
+    <strong>Check Your Progress:</strong>
+  </p>
+  <form action="mailto:pranavkumster@gmail.com?subject=ForloopAnswers" method="post" enctype="text/plain">
+    <label><strong>Q1.</strong> What will be the output of the below program? <br>
+      #include < stdio.h> <br>
+        int main () { <br>
+
+        int a; <br>
+
+        /* for loop execution */ <br>
+        for( a = 10; a <= 20; ++a ){ <br>
+          printf("value of a: %d\n", a); <br>
+          } <br>
+
+          return 0; <br>
+          } <br>
+    </label>
+    <input type="text" name="Q1 Ans:" value="">
+    <br>
+    <br>
+    <label><strong>Q2.</strong> What will be the output of the below program? <br>
+      #include < stdio.h> <br>
+
+        int main () { <br>
+        /* Declare array of type int which can have maximum 10 values */ <br>
+        int array[10] = { 1, 2, 3, 4, 5, 6, 7,8}; <br>
+        int sum = 0;<br>
+        int i;<br>
+        for (i = 1; i < 10; i++) {<br>
+          sum += array[i]; /* sum = sum + array[i] */<br>
+          }<br>
+          printf("Sum of the array is %d\n", sum);<br>
+          return 0;<br>
+          }<br>
+          <ol>
+            <li>Compilation Error</li>
+            <li>36</li>
+            <li>35</li>
+          </ol>
+    </label>
+    <input type="text" name="Q2 Ans:" value=""> <br> <br>
+    <label><strong>Q3.</strong> What will be the output of the below program? <br>
+      #include < stdio.h> <br>
+        int main () { <br>
+        /* Declare array of type int which can have maximum 10 values */ <br>
+        int array[10] = { 1, 2, 3, 4, 5, 6, 7,8}; <br>
+        int sum = 0; <br>
+        int i; <br>
+        for (i = 0; i < 6; i++) { <br>
+          sum += array[i]; /* sum = sum + array[i] */ <br>
+          } <br>
+          printf("Sum of the array is %d\n", sum); <br>
+          return 0; <br>
+          }
+          <br>
+          <ol>
+            <li>Compilation Error</li>
+            <li>36</li>
+            <li>21</li>
+          </ol>
+    </label>
+    <input type="text" name="Q3 Ans:" value=""> <br> <br>
+    <input type="submit" name="" value="Sumbit">
+  </form>
+</body>
+
+</html>
