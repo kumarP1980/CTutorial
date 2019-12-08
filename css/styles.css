@@ -17,3 +17,11 @@ body{
   h3 {
     color: #0c9463;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #fe346e;
+  }
